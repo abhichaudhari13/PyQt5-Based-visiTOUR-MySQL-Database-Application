@@ -8,7 +8,7 @@ import pyodbc
 import os
 import pandas as pd
 
-
+#For intserting records
 class InsertDialog(QDialog):
     def __init__(self):
         super(InsertDialog, self).__init__()
@@ -104,7 +104,7 @@ class InsertDialog(QDialog):
 
 
 
-
+#For editing records
 class EditDialog(QDialog):
     def __init__(self):
         super(EditDialog, self).__init__()
@@ -203,7 +203,7 @@ class EditDialog(QDialog):
 
 
 
-
+#For searching in the record
 class SearchDialog(QDialog):
     def __init__(self):
         super(SearchDialog, self).__init__()
@@ -247,6 +247,8 @@ class SearchDialog(QDialog):
         except Exception:
             QMessageBox.warning(QMessageBox(), 'Error', 'Could not Find Tourist from the database.')
 
+         
+#For deleting from the record
 class DeleteDialog(QDialog):
     def __init__(self):
         super(DeleteDialog, self).__init__()
